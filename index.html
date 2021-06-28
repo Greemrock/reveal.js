@@ -1,66 +1,67 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Lodash</h2>
+			</section>
+			<section>
 				<section>
-					<h2>Lodash</h2>
+					<h3>Lodash</h3>
+					<p>What is it?</p>
+					<p>Why do I need it?</p>
+					<p>How do I use it?</p>
 				</section>
 				<section>
-					<section>
-						<h3>Lodash</h3>
-						<p>What is it?</p>
-						<p>Why do I need it?</p>
-						<p>How do I use it?</p>
-					</section>
-					<section>
-						<h3>What is Lodash?</h3>
-						<p>Lodash is a modern JavaScript utility library that
-							makes JavaScript easier by taking the hassle out of working with arrays, numbers, 
-							objects, strings, etc.</p>
-					</section>
-					<section>
-						<h4>Why do I need it?</h4>
-						<p>You can interact with data types and structures by implementing your algorithms,
-							but in some cases using Lodash will leverage your productivity and avoid some lines of code.</p>
-					</section>
-					<section>
-						<h4>How do I use it?</h4>
-						<pre>
+					<h3>What is Lodash?</h3>
+					<p>Lodash is a modern JavaScript utility library that
+						makes JavaScript easier by taking the hassle out of working with arrays, numbers,
+						objects, strings, etc.</p>
+				</section>
+				<section>
+					<h4>Why do I need it?</h4>
+					<p>You can interact with data types and structures by implementing your algorithms,
+						but in some cases using Lodash will leverage your productivity and avoid some lines of code.</p>
+				</section>
+				<section>
+					<h4>How do I use it?</h4>
+					<pre>
 							<code data-trim data-noescape>
 								$ npm install lodash
 							</code>
 						</pre>
-					</section>
-					<section>
-						<p>After installation is complete, Lodash can be imported into a JavaScript file as:</p>
-						<pre>
+				</section>
+				<section>
+					<p>After installation is complete, Lodash can be imported into a JavaScript file as:</p>
+					<pre>
 							<code data-trim data-noescape>
 								import _ from "lodash"
 							</code>
 						</pre>
-					</section>
 				</section>
-				<section>
-					<p>Let's get started</p>
-					<img src="./assets/gif/giphy.gif" alt="matrix">
-				</section>
-				<section>
-					<p>_.isEmpty</p>
-					<pre>
+			</section>
+			<section>
+				<p>Let's get started</p>
+				<img src="./assets/gif/giphy.gif" alt="matrix">
+			</section>
+			<section>
+				<p>_.isEmpty</p>
+				<pre>
 						<code data-trim data-noescape>
 							// Empty array
 							_.isEmpty([]) // true
@@ -74,10 +75,10 @@
 							_.isEmpty(undefined) // true
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.get</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.get</p>
+				<pre>
 						<code data-trim data-noescape>
 							const aryaStark = {
 								name: 'Arya Stark',
@@ -95,10 +96,10 @@
 							get('mother.name', jonSnow) // undefined
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.get</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.get</p>
+				<pre>
 						<code data-trim data-noescape>
 							const characters = [
 								{
@@ -115,10 +116,10 @@
 							_.get('[1].parents[0]', characters); // Tywin Lannister
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.pick</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.pick</p>
+				<pre>
 						<code data-trim data-noescape>
 							const jonSnow = {
 								firstName: 'Jon',
@@ -136,11 +137,11 @@
 							// { firstName: 'Jon' father: { firstName: 'Ned' } wolf: 'Ghost' }
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.sample</p>
-					<p>Get a random item from a list</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.sample</p>
+				<p>Get a random item from a list</p>
+				<pre>
 						<code data-trim data-noescape>
 							const months = ['January', 'February', 'March', 'April', 'May',
 							'June', 'July', 'August', 'September', 'October', 'November', 
@@ -154,11 +155,11 @@
 							_.sample(months);
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.intersection</p>
-					<p>Intersection of arrays</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.intersection</p>
+				<p>Intersection of arrays</p>
+				<pre>
 						<code data-trim data-noescape>
 							const arrayA = [1, 2, 3, 4, 5];
 							const arrayB = [2, 3];
@@ -171,11 +172,11 @@
 							_.intersection(arrayA, arrayB);
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.times</p>
-					<p>Loop in N iterations</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.times</p>
+				<p>Loop in N iterations</p>
+				<pre>
 						<code data-trim data-noescape>
 							// Common variant
 							for (var i = 0; i <= 5; i++) {
@@ -191,11 +192,11 @@
 							});
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.omit</p>
-					<p>Removing attributes from an object</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.omit</p>
+				<p>Removing attributes from an object</p>
+				<pre>
 						<code data-trim data-noescape>
 							const user = { 
 								name: 'John', 
@@ -211,11 +212,11 @@
 							_.omit(user, ['occupation', 'street']);
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.random</p>
-					<p>A pseudo-random number from a range</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.random</p>
+				<p>A pseudo-random number from a range</p>
+				<pre>
 						<code data-trim data-noescape>
 							// Common variant
 							function getRandom(min, max) {
@@ -226,11 +227,11 @@
 							_.random(73, 1014);
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>_.pluck</p>
-					<p>Ratio (map) for nested attributes</p>
-					<pre>
+			</section>
+			<section>
+				<p>_.pluck</p>
+				<p>Ratio (map) for nested attributes</p>
+				<pre>
 						<code data-trim data-noescape>
 							const books = [
 							{
@@ -247,38 +248,39 @@
 							_.pluck(books, 'name');
 						</code>
 					</pre>
-				</section>
-				<section>
-					<p>Thanks!</p>
-					<p>Go import lodash.</p>
-					<a href="https://lodash.com/" target="_blank">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 2500" width="150">
-							<path d="M70 188.5h220v1460h870v180H70v-1640zm1776 396c-225-3-450 140-520 
+			</section>
+			<section>
+				<p>Thanks!</p>
+				<p>Go import lodash.</p>
+				<a href="https://lodash.com/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 2500" width="150">
+						<path d="M70 188.5h220v1460h870v180H70v-1640zm1776 396c-225-3-450 140-520 
 							357-100 250-54 564 142 755 190 158 476 170 690 58 147-78 240-233 260-396 
 							26-170 13-356-70-510-98-164-290-270-480-263l-22-3zm20 174c165 0 313 126 
 							340 288 50 183 20 407-130 536-140 114-365 98-480-43-140-150-140-380-68-560
-							50-130 183-223 323-220h18z" fill="#fff"/>
-							<path d="M70 2061.5h2360v250H70v-250z" fill="#3492ff"/>
-						</svg>	
-					</a>
-				</section>
-			</div>
+							50-130 183-223 323-220h18z" fill="#fff" />
+						<path d="M70 2061.5h2360v250H70v-250z" fill="#3492ff" />
+					</svg>
+				</a>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
